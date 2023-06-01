@@ -1,0 +1,18 @@
+// http://the-internet.herokuapp.com/add_remove_elements/ adresine gidiniz
+// Add Element butonuna 100 defa basınız
+// 100 defa basıldığını test ediniz
+// 90 defa delete butonuna basınız
+// 90 defa basıldığını doğrulayınız
+// Sayfayı kapatınız
+
+****************
+
+//https://www.amazon.com/ adresine gidin
+// Browseri tam sayfa yapin
+// Sayfayi “refresh” yapin
+//Sayfa basliginin “Spend less” ifadesi icerdigini test edin
+//Gift Cards sekmesine basin
+//Birthday butonuna basin
+//Best Seller bolumunden ilk urunu tiklayin  9- Gift card details’den 25 $’i secin
+//Urun ucretinin 25$ oldugunu test edin
+//Sayfayi kapatin
