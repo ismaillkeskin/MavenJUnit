@@ -6,7 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="SeleniumNewProject" />
+=======
+        <module name="B151MavenJUnit" />
+>>>>>>> a0d4e03 (05/06/23)
       </profile>
     </annotationProcessing>
   </component>
