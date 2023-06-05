@@ -43,6 +43,6 @@ public class C03_BeforeAfter {
 
     @AfterClass
     public static void afterClass() throws Exception {
-        System.out.println("Her classtan sonra bir kez çalışır");
+        System.out.println("Her classtan sonra bir kez çalışır.");
     }
 }
