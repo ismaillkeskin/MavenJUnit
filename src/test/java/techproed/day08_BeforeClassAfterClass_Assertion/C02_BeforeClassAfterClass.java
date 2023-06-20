@@ -1,4 +1,4 @@
-package techproed.day08_Assertion;
+package techproed.day08_BeforeClassAfterClass_Assertion;
 
 
 
@@ -22,7 +22,7 @@ public class C02_BeforeClassAfterClass {
     yada raporlarimizi sonlandirmak icin de kullanabiliriz
      */
 
-    WebDriver driver;
+    static WebDriver driver;
     @BeforeClass
     public static void before() throws Exception {
         WebDriverManager.chromedriver().setup();
