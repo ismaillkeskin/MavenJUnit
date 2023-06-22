@@ -1,4 +1,4 @@
-package techproed;
+package techproed.day17_Exceptions;
 
 import com.github.javafaker.Faker;
 import org.junit.Test;
@@ -35,6 +35,6 @@ public class C03_NullPointerException {
     @Test
     public void test03() {
         actions.doubleClick().perform();//-->java.lang.NullPointerException
-    
+
     }
 }

@@ -15,9 +15,7 @@
     </properties>
 
 
-    <!-- İLK ONCE SELENIUM-JAVA dependency'sini pom.xml dosyamıza
-mvnrepository.com
- adresinden alır koyarız  -->
+    <!-- İLK ONCE SELENIUM-JAVA dependency'sini pom.xml dosyamıza mvnrepository.com adresinden alır koyarız  -->
     <!-- Selenium-java sürücüleri kontrol etmek için gereken java sınıflarını ve methodlarını içerir-->
     <!-- Tüm dependency leri dependencies tag'i içine koymamız gerekir -->
     <dependencies>
@@ -58,13 +56,6 @@ https://mvnrepository.com/artifact/junit/junit
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
         </dependency>
-
-
-
-
-
-
-
 
 
 

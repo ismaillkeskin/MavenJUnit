@@ -34,5 +34,8 @@ public class C04_Faker {
 
         //Meslek pozisyonu
         System.out.println("Meslek:" +faker.job().position());
+
+        //E-Mail oluşturma
+        System.out.println(faker.internet().emailAddress());
     }
 }
