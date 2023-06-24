@@ -32,7 +32,7 @@ public class C04_WEresmi extends TestBase {
         //çıkan sonuc yazısının resmini alalım
         WebElement sonucYazisi = driver.findElement(By.xpath("(//*[@class='sg-col-inner'])[1]"));
         String tarih = new SimpleDateFormat("_hh_mm_ss_ddMMyyyy").format(new Date());
-        String dosyaYolu = "src/test/java/techproed/WebElementResmi/screenShot" + tarih + ".jpeg";
+        String dosyaYolu = "src/test/java/techproed/ElementResmi/screenShot" + tarih + ".jpeg";
         FileUtils.copyFile(sonucYazisi.getScreenshotAs(OutputType.FILE),new File(dosyaYolu));
 
     }

@@ -41,6 +41,7 @@ public class C01_TumSayfaResmi extends TestBase {
        String dosyaYolu = "src/test/java/TumSayfaResmi/screenShot.png";
         TakesScreenshot ts = (TakesScreenshot) driver;
         FileUtils.copyFile(ts.getScreenshotAs(OutputType.FILE),new File(dosyaYolu));
+
     }
 
     @Test
