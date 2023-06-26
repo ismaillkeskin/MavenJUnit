@@ -1,4 +1,4 @@
-package techproed.day19_ExtentReport_WebTables;
+package techproed.day19_ExtentReport;
 
 
 import com.aventstack.extentreports.ExtentReports;

@@ -1,4 +1,4 @@
-package techproed.day19_ExtentReport_WebTables;
+package techproed.day20_WebTable_Excel;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -7,7 +7,7 @@ import techproed.utilities.TestBase;
 
 import java.util.List;
 
-public class C03_WebTables extends TestBase {
+public class C01_WebTables extends TestBase {
     /*
     WEBTABLE;
     <table> tagı ile başlar

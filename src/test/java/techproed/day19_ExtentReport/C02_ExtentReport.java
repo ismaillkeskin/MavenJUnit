@@ -1,4 +1,4 @@
-package techproed.day19_ExtentReport_WebTables;
+package techproed.day19_ExtentReport;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
