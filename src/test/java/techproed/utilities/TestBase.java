@@ -54,7 +54,7 @@ public abstract class TestBase {
        extentReports = new ExtentReports();
        extentReports.flush();
 
-        driver.quit();
+       // driver.quit();
     }
     //HARD WAIT(Bekleme Methodu)
     public void bekle(int saniye) {
