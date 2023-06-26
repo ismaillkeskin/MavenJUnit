@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import techproed.utilities.TestBase;
 
+import java.util.List;
+
 public class C03_WebTables extends TestBase {
     /*
     WEBTABLE;
@@ -33,29 +35,40 @@ public class C03_WebTables extends TestBase {
         System.out.printf(ucuncuSatir.getText());
 
        //    Task 3 : Son satırın verilerini yazdırın
+        //WebElement sonSatir = driver.findElement(By.xpath("(//table)[1]//tbody//tr[last()]"));
+                                                     // (//tbody)[1]//tr[last()] --> Bu şekilde de locate alınabilir
+                                                     // last() : istenilene göre son satir yada sütün bilgilerini verir
         WebElement sonSatir = driver.findElement(By.xpath("(//table)[1]//tr[4]"));
         System.out.println("**************************");
-        System.out.println(sonSatir.getText());
+        System.out.println("1.Tablo son satır bilgileri :" +sonSatir.getText());
 
 
         //    Task 4 : 5. Sütun verilerini yazdırın
-        WebElement besinciSutun = driver.findElement(By.xpath("(//table)[1]//td[5]"));
+        WebElement besinciBaslik = driver.findElement(By.xpath("(//thead)[1]//th[5]"));
         System.out.println("*****************************************");
-        System.out.println(besinciSutun.getText());
+        System.out.println(besinciBaslik.getText());
+        List<WebElement> besinciSutun = driver.findElements(By.xpath("(//tbody)[1]//td[5]"));
+        besinciSutun.forEach(t-> System.out.println(t.getText()));
 
+         // Task 5 : 3. Satırdaki 1. ve 2. Sütün bilgilerini yazdırınız
+        System.out.println("*********************************");
+        List<WebElement> ucuncuSatirr = driver.findElements(By.xpath("(//tbody)[1]//tr[3]//td[position()>=1 and position()<=2]"));
+        ucuncuSatirr.forEach(t-> System.out.print(t.getText()+"\t"));
 
-        //    Task 5 : Iki parametreli bir Java metodu oluşturalım: printData
-        //    Parameter 1 = satır numarası
-        //    Parameter 2 = sütun numarası
-        //    printData(2,3);  => 2. satır, 3. sütundaki veriyi yazdırsın.
+        //  Task 6 : Iki parametreli bir Java metodu oluşturalım: printData
+        //   Parameter 1 = satır numarası
+        //   Parameter 2 = sütun numarası
+        //   printData(2,3);  => 2. satır, 3. sütundaki veriyi yazdırsın.
+        System.out.println();
+        System.out.println("***********************");
 
         printData(2,3);
 
     }
 
     public void printData(int satir, int sutun){
-        WebElement data = driver.findElement(By.xpath("(//table)[1]//tbody//tr["+satir+"]//td["+sutun+"]"));
-        System.out.println(data.getText());
+        WebElement satirSutun = driver.findElement(By.xpath("(//table)[1]//tbody//tr["+satir+"]//td["+sutun+"]"));
+        System.out.println(satirSutun.getText());
 
     }
 }
