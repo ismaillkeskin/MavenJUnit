@@ -69,6 +69,7 @@ dependency'i pom.xml dosyamıza ekleriz.
          ekleyebiliriz.
          Ve son olarak actions daki perform methodu gibi extentReport objesi ile flush() methodu kullanarak
            raporu sonlandırırız
+
          */
 
 
