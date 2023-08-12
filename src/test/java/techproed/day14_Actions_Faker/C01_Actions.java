@@ -10,6 +10,28 @@ import java.security.Key;
 
 public class C01_Actions extends TestBase {
 
+    // Klavye Actions
+
+    // sendKeys ==> Bir yazı gönderilirken yada bir tusa bir kez basacaksak kullanılır.
+    // sendKeys(Keys.TAB)
+    // sendKeys(Keys.PAGE_DOWN)
+
+    // keyDown ==> Bir tusa basılı tutacaksak kullanılır.
+    // keyDown(Keys.SHIFT)
+
+    // keyUp ==> Tusu kaldıracaksak kullanılır.
+    // keyUp(Keys.SHIFT)
+
+
+    // Mause Actions
+
+    // click() ==> sol click yapmak icin kullanılır.
+    // contextClick() ==> sag click yapmak icin kullanılır.
+    // doubleClick() ==> cift tıklamak icin kullanılır.
+    // clickAndHold() ==> tıkla basılı tut islemi icin kullanılır.
+    // dragAndDrop() ==> sürükle bırak islemi icin kullanılır.
+    // moveToElement() ==> yaklasma islemi icin kullanılır.
+
     @Test
     public void test01() {
 
