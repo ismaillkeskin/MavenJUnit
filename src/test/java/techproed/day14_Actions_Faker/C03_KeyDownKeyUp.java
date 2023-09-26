@@ -51,6 +51,7 @@ public class C03_KeyDownKeyUp extends TestBase {
         //Arama kutusuna "Selenium" yazın ve Enter tuşuna basın
         WebElement aramaKutusu = driver.findElement(By.xpath("//*[@class='gLFyf']"));
         aramaKutusu.sendKeys("Selenium",Keys.ENTER);
+        System.out.println();
         //Sayfayı bekleyin
         bekle(4);
         //Arattığımız kelimeyi arama kutusundan ctrl+x ile keselim
